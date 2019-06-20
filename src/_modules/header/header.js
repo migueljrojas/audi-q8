@@ -2,19 +2,16 @@
 
 // Constructor
 var Header = function() {
-    var header = $('.header');
-    var body = $('body');
-    var menuOpen = $('.header__hamburguer');
-    var menuClose = $('.header__nav__close');
+    var retailerSelectBox = $('.home__main-cta__select');
+    var submitReserva = $('.home__main-cta__button');
 
-    menuOpen.on('click', function(){
-        header.addClass('-open');
-        body.addClass('-hideOverflow');
+    retailerSelectBox.on('change', function(){
+        submitReserva.removeAttr('disabled');
     });
 
-    menuClose.on('click', function(){
-        header.removeClass('-open');
-        body.removeClass('-hideOverflow');
+    submitReserva.on('click', function(e){
+        e.preventDefault();
+        window.location.href = '/gracias';
     });
 };
 

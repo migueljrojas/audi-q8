@@ -1,0 +1,73 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.home
+        section.home__hero
+        section.home__main.wow.fadeInUp
+            .container
+                .row.justify-content-center
+                    .col-22.text-center
+                        h1.home__main-title.wow.fadeInUpBig Estar a la vanguardia es estar siempre primero, como tú con esta exclusiva invitación. Reserva tu Q8 antes de su lanzamiento. 
+                        p.home__main-subtitle.wow.fadeInUpBig La cantidad de cupos es limitada, por lo que no te demores en reservar el tuyo.
+                        
+                        form.home__main-cta__bottom
+                            select.home__main-cta__select
+                                option(disabled, selected, hidden) Concesionario:
+                                optgroup(label="Santiago:")
+                                    option Audi Zentrum
+                                    option Klassik Car
+
+                                optgroup(label="Viña del Mar:")
+                                    option Cartoni
+
+                                optgroup(label="La Serena:")
+                                    option Carmona
+
+                                optgroup(label="Concepción:")
+                                    option Salazar Israel
+                            button.home__main-cta__button(disabled) Reservar
+                //- .row.nopadding.justify-content-center
+                //-     .col-22.col-md-20
+                //-         .home__main-cta.wow.fadeInUp
+                //-             .home__main-cta__top
+                //-                 .home__main-cta__car
+                //-                     img(src="/images/audi-q8.png")
+                //-                 .home__main-cta__info
+                //-                     span._label Importe de Reserva
+                //-                     span._prize $2.000.000 + IVA
+                //-             form.home__main-cta__bottom
+                //-                 select.home__main-cta__select
+                //-                     option(disabled, selected, hidden) Concesionario:
+                //-                     optgroup(label="Santiago:")
+                //-                         option Audi Zentrum
+                //-                         option Klassik Car
+
+                //-                     optgroup(label="Viña del Mar:")
+                //-                         option Cartoni
+
+                //-                     optgroup(label="La serena:")
+                //-                         option Carmona
+
+                //-                     optgroup(label="Concepción:")
+                //-                         option Salazar Israel
+
+                //-                 button.home__main-cta__button(disabled) Reservar
+    
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados

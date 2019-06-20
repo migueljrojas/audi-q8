@@ -1,0 +1,30 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../';
+
+block content
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.thanks
+        section.thanks__hero
+        section.thanks__main.wow.fadeInUp
+            .container
+                .row.justify-content-center
+                    .col-22
+                        h1.thanks__main-title.wow.fadeInUpBig Muchas gracias
+                        p.thanks__main-subtitle.wow.fadeInUpBig Tu reserva se ha realizado con éxito.<br>Te estaremos contactando cuando esté lista la opción de configuración.
+    
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados

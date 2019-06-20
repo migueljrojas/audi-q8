@@ -1,55 +1,37 @@
 .header {
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    padding: 20px;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
 
-    $h: &;
+    @include mq(sm) {
+        padding: 30px 80px;
+    }
 
-    &__hamburguer {
-        cursor: pointer;
-        width: 25px;
-        height: 25px;
-        margin: auto;
-        position: absolute;
-        right: 32px;
-        top: 30px;
+    &__logo-q8 {
+        font-size: 9vw;
+        font-family: $titleFont;
+        font-weight: 700;
+        color: $white;
+        line-height: 1;
 
-        span {
-            background-color: $mainColor;
-            border-radius: 2px;
-            content: '';
-            display: block;
-            width: 100%;
-            height: 2px;
-
-            &:nth-child(1) {
-                animation:outT 0.6s $easing backwards;
-                animation-direction:reverse;
-            }
-            &:nth-child(2) {
-                margin: 7px 0;
-                animation:outM 0.6s $easing backwards;
-                animation-direction:reverse;
-            }
-            &:nth-child(3) {
-                animation:outBtm 0.6s $easing backwards;
-                animation-direction:reverse;
-            }
+        @include mq(sm) {
+            font-size: 44px;
         }
     }
 
-    &.-open {
-        #{$h}__hamburguer {
-            span:nth-child(1) {
-                animation:inT 0.6s $easing forwards;
-            }
-            span:nth-child(2) {
-                animation:inM 0.6s $easing forwards;
-            }
-            span:nth-child(3) {
-                animation:inBtm 0.6s $easing forwards;
-            }
-        }
+    &__logo-audi {
+        img {
+            height: 9vw;
+            width: auto;
 
-        #{$h}__nav {
-
+            @include mq(sm) {
+                height: 44px;
+            }
         }
     }
 }

@@ -1,4 +1,25 @@
 extends _layouts/base
 
 block content
-    main.home
+
+    main.registro
+        section.registro__hero.wow.fadeInRight
+            img.registro__hero__logo(src="/images/audi-logo.png")
+
+        section.registro__sidebar.wow.fadeInLeft
+            .registro__sidebar-wrapper
+                h1.registro__title Welcome to the 8th Dimension
+                p.registro__subtitle Ingresa tu usuario y contraseña y descubre más.
+                form.registro__form
+                    .registro__form__group
+                        input.registro__form__input(type="email", placeholder="Usuario")
+                        label.registro__form__label Usuario
+                    .registro__form__group
+                        input.registro__form__input(type="password", placeholder="Contraseña")
+                        label.registro__form__label Contraseña
+                    .registro__form__group
+                        a.registro__form__submit(href="/registro") Ingresar
+
+
+    
+
