@@ -19,10 +19,12 @@
 
     &__buttons {
         width: 100%;
-
+        margin-bottom: 40px;
+        
         @include mq(md) {
             display: flex;
             justify-content: flex-end;
+            margin-bottom: 0;
         }
     }
 
@@ -36,7 +38,7 @@
         width: 100%;
 
         @include mq(md) {
-            width: 20%;
+            width: 30%;
             margin-left: 20px;
         }
 
@@ -50,6 +52,71 @@
 
         span {
             margin-left: 5px;
+        }
+    }
+
+    &__side-module {
+        border: 1px solid $lightGray;
+        padding: 20px;
+
+        &__title {
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        &__description {
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        &__image {
+            width: 100%;
+            
+            img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            p {
+                margin: 0;
+                font-weight: 500;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
+
+        &__button {
+            border: none;
+            background: $black;
+            height: 60px;
+            line-height: 60px;
+            width: 100%;
+            text-align: center;
+            color: $white;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &__link {
+            display: block;
+            text-decoration: none;
+            font-size: 14px;
+            margin: 0;
+            
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -136,7 +203,7 @@
 
             @include mq(md) {
                 order: 1;
-                width: 50%;
+                width: 45%;
             }
         }
 
@@ -216,6 +283,13 @@
             font-weight: 700;
             order: 3;
             margin-bottom: 0;
+            width: 100%;
+            text-align: right;
+
+            @include mq(md) {
+                width: auto;
+                text-align: left;
+            }
         }
     }
 }

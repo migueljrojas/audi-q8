@@ -16,7 +16,7 @@ block content
         section.configuracion__content
             .container
                 .row
-                    .col-24
+                    .col-24.col-md-16
                         h2.configuracion--paso3__title Selecciona tu equipamento
                         .configuracion--paso3__content
                             .configuracion--paso3__container.configuracion--paso3__container--paso3
@@ -41,6 +41,7 @@ block content
                                     .configuracion--paso3__group
                                         p.configuracion--paso3__description
                                             |Adaptive air suspension
+                                .configuracion--paso3__image
                                 p.configuracion--paso3__price
                                     |USD 
                                     span 3.500
@@ -65,6 +66,7 @@ block content
                                     .configuracion--paso3__group
                                           p.configuracion--paso3__description
                                             |Headliner in Black fabric
+                                .configuracion--paso3__image
                                 p.configuracion--paso3__price
                                     |USD 
                                     span 3.500
@@ -131,6 +133,20 @@ block content
                             a.configuracion__button(href="/configuracion/paso4") Continuar
                                 span >
 
+                    .col-24.col-md-7.offset-md-1
+                        .configuracion__side-module
+                            h3.configuracion__side-module__title Tu Audi Q8
+                            p.configuracion__side-module__description 55 TFSI
+                            .configuracion__side-module__image
+                                    img(src="/images/configuracion/version-tfsi.png")
+                            .configuracion__side-module__price
+                                p Precio
+                                span USD 82.946
+                            button.configuracion__side-module__button Tu Audi Q8
+                            .configuracion__side-module__wrapper
+                                a.configuracion__side-module__link(href="#") > Equipamiento en serie
+                                a.configuracion__side-module__link(href="#") > Nueva configuración
+                                a.configuracion__side-module__link(href="#") > Descargar Ficha Técnica
 
     footer.footer
         ul.footer__nav
