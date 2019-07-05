@@ -1,8 +1,77 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../';
 
 block content
-  p configuracion/paso2 page
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.configuracion
+        section.configuracion__hero
+        
+        section.configuracion__content
+            .container
+                .row
+                    .col-24
+                        h2.configuracion--paso2__title Selecciona la versión deseada
+
+                        .configuracion--paso2__content
+                            .configuracion--paso2__container
+                                .configuracion--paso2__wrapper
+                                    input.configuracion--paso2__input(type="radio" id="radio1" name="radio")
+                                    label.configuracion--paso2__label(for="radio1")
+                                    .configuracion--paso2__group
+                                        p.configuracion--paso2__name Q8 55 TFSI
+                                .configuracion--paso2__image
+                                    img(src="/images/configuracion/version-tfsi.png")
+                                p.configuracion--paso2__price
+                                    |USD 
+                                    span 82.946
+
+                            .configuracion--paso2__container
+                                .configuracion--paso2__wrapper
+                                    input.configuracion--paso2__input(type="radio" id="radio2" name="radio")
+                                    label.configuracion--paso2__label(for="radio2")
+                                    .configuracion--paso2__group
+                                        p.configuracion--paso2__name
+                                            |Q8 55 TFSI
+                                            br
+                                            |Sline
+                                .configuracion--paso2__image
+                                    img(src="/images/configuracion/version-tfsi-sport.png")
+                                p.configuracion--paso2__price
+                                    |USD 
+                                    span 94.435
+
+                            .configuracion--paso2__container
+                                .configuracion--paso2__wrapper
+                                    input.configuracion--paso2__input(type="radio" id="radio3" name="radio")
+                                    label.configuracion--paso2__label(for="radio3")
+                                    .configuracion--paso2__group
+                                          p.configuracion--paso2__name
+                                            |Q8 55 TFSI
+                                            br
+                                            |Sline Black
+                                .configuracion--paso2__image
+                                    img(src="/images/configuracion/version-tfsi-sport.png")
+                                p.configuracion--paso2__price
+                                    |USD 
+                                    span 94.435
+
+                        .configuracion__buttons
+                            a.configuracion__button(href="/configuracion/paso3") Continuar
+                                span >
+
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados

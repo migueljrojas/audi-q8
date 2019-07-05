@@ -1,0 +1,117 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../';
+
+block content
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.configuracion
+        section.configuracion__hero
+        
+        section.configuracion__content
+            .container
+                .row
+                    .col-24
+                        h2.configuracion--paso6__title Selecciona el color exterior
+                        .configuracion--paso6__content
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio1" name="radio")
+                                    label.configuracion--paso6__label(for="radio1")
+                                    .configuracion--paso6__group
+                                        p.configuracion--paso6__description
+                                            |Azul Galaxia
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-azul-galaxia.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio2" name="radio")
+                                    label.configuracion--paso6__label(for="radio2")
+                                    .configuracion--paso6__group
+                                        p.configuracion--paso6__description
+                                            |Beige Cobra
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-beige-cobra.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio3" name="radio")
+                                    label.configuracion--paso6__label(for="radio3")
+                                    .configuracion--paso6__group
+                                          p.configuracion--paso6__description
+                                            |Blanco Glaciar
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-blanco-glaciar.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio4" name="radio")
+                                    label.configuracion--paso6__label(for="radio4")
+                                    .configuracion--paso6__group
+                                          p.configuracion--paso6__description
+                                            |Gris Samurai
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-gris-samurai.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio4" name="radio")
+                                    label.configuracion--paso6__label(for="radio4")
+                                    .configuracion--paso6__group
+                                          p.configuracion--paso6__description
+                                            |Marrón Argus
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-marron-argus.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio4" name="radio")
+                                    label.configuracion--paso6__label(for="radio4")
+                                    .configuracion--paso6__group
+                                          p.configuracion--paso6__description
+                                            |Naranja Dragon
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-naranja-dragon.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio4" name="radio")
+                                    label.configuracion--paso6__label(for="radio4")
+                                    .configuracion--paso6__group
+                                          p.configuracion--paso6__description
+                                            |Negro Orca
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-negro-orca.png")
+
+                            .configuracion--paso6__container
+                                .configuracion--paso6__wrapper
+                                    input.configuracion--paso6__input(type="radio" id="radio4" name="radio")
+                                    label.configuracion--paso6__label(for="radio4")
+                                    .configuracion--paso6__group
+                                          p.configuracion--paso6__description
+                                            |Plata Florete
+                                .configuracion--paso6__image.configuracion--paso6__image--paso6
+                                    img(src="/images/configuracion/color-plata-florete.png")
+
+                        .configuracion__buttons
+                            a.configuracion__button(href="/configuracion/paso7") Pagar Web Pay
+                                span >
+                            a.configuracion__button(href="/configuracion/paso7") Pagar en concesionario
+                                span >
+
+
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados

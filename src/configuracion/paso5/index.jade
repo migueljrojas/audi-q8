@@ -1,8 +1,75 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../';
 
 block content
-  p configuracion/paso5 page
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.configuracion
+        section.configuracion__hero
+        
+        section.configuracion__content
+            .container
+                .row
+                    .col-24
+                        h2.configuracion--paso5__title Selecciona el color del interior
+                        .configuracion--paso5__content
+                            .configuracion--paso5__container
+                                .configuracion--paso5__wrapper
+                                    input.configuracion--paso5__input(type="radio" id="radio1" name="radio")
+                                    label.configuracion--paso5__label(for="radio1")
+                                    .configuracion--paso5__group
+                                        p.configuracion--paso5__description
+                                            |Beige
+                                .configuracion--paso5__image.configuracion--paso5__image--paso5
+                                    img(src="/images/configuracion/tapiceria-gris.png")
+
+                            .configuracion--paso5__container
+                                .configuracion--paso5__wrapper
+                                    input.configuracion--paso5__input(type="radio" id="radio2" name="radio")
+                                    label.configuracion--paso5__label(for="radio2")
+                                    .configuracion--paso5__group
+                                        p.configuracion--paso5__description
+                                            |Gris Metrópolis
+                                .configuracion--paso5__image.configuracion--paso5__image--paso5
+                                    img(src="/images/configuracion/tapiceria-gris.png")
+
+                            .configuracion--paso5__container
+                                .configuracion--paso5__wrapper
+                                    input.configuracion--paso5__input(type="radio" id="radio3" name="radio")
+                                    label.configuracion--paso5__label(for="radio3")
+                                    .configuracion--paso5__group
+                                          p.configuracion--paso5__description
+                                            |Marrón
+                                .configuracion--paso5__image.configuracion--paso5__image--paso5
+                                    img(src="/images/configuracion/tapiceria-marron.png")
+
+                            .configuracion--paso5__container
+                                .configuracion--paso5__wrapper
+                                    input.configuracion--paso5__input(type="radio" id="radio4" name="radio")
+                                    label.configuracion--paso5__label(for="radio4")
+                                    .configuracion--paso5__group
+                                          p.configuracion--paso5__description
+                                            |Negro
+                                .configuracion--paso5__image.configuracion--paso5__image--paso5
+                                    img(src="/images/configuracion/tapiceria-negro.png")
+
+                        .configuracion__buttons
+                            a.configuracion__button(href="/configuracion/paso6") Continuar
+                                span >
+
+
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados

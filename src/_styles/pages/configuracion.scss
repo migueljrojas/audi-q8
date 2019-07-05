@@ -1,0 +1,221 @@
+.configuracion {
+    &__hero {
+        background: url('/images/main-home-mobile.jpg') no-repeat center top / cover;
+        height: 75vw;
+    
+        @include mq(md) {
+          height: 27.5vw;
+          background: url('/images/main-home.jpg') no-repeat center top fixed / 100%;
+        }
+    }
+
+    &__content {
+        padding: 40px 0;
+
+        @include mq(md) {
+            padding: 80px 0;
+        }
+    }
+
+    &__buttons {
+        width: 100%;
+
+        @include mq(md) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__button {
+        display: block;
+        text-decoration: none;
+        border: 1px solid $black;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        width: 100%;
+
+        @include mq(md) {
+            width: 20%;
+            margin-left: 20px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+
+            @include mq(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        span {
+            margin-left: 5px;
+        }
+    }
+
+    &--paso1,
+    &--paso2,
+    &--paso3,
+    &--paso4,
+    &--paso5,
+    &--paso6,
+    &--paso7 {
+        &__title {
+            margin: 0;
+            margin-bottom: 40px;
+            font-size: 18px;
+
+            @include mq(md) {
+                margin-bottom: 80px;
+                font-size: 24px;
+            }
+
+            &--paso7 {
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__content {
+            margin-bottom: 40px;
+
+            @include mq(md) {
+                margin-bottom: 80px;
+            }
+        }
+
+        &__text {
+            text-align: center;
+            margin: 0;
+            
+            @include mq(md) {
+                width: 70%;
+                font-size: 14px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 1px solid $lightGray;
+            border-right: 1px solid $lightGray;
+            border-top: 1px solid $lightGray;
+            flex-wrap: wrap;
+            padding: 20px;
+            height: auto;
+            
+            @include mq(md) {
+                height: 20vh;
+                padding: 20px 40px;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $lightGray;
+            }
+
+            &--paso3,
+            &--paso4 {
+                border: 1px solid $lightGray;
+
+                &:not(:last-of-type) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            order: 2;
+            width: 100%;
+
+            @include mq(md) {
+                order: 1;
+                width: 50%;
+            }
+        }
+
+        &__input {
+            position: absolute;
+            left: -9999px;
+            
+            &:checked + label {
+                &:after {
+                    content: '✔';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate3d(-50%, -50%, 0);                    
+                }
+            }
+        }
+
+        &__label {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $midGray;
+            margin-right: 20px;
+
+            &:after {
+                @include trans;
+
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+
+        &__name {
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        &__description {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        &__image {
+            order: 1;
+            margin-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            height: 20vh;
+            overflow: hidden;
+            
+            @include mq(md) {
+                margin-left: 0;
+                height: 100%;
+                order: 2;
+                margin-bottom: 0;
+            }
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+
+            &--paso5,
+            &--paso6 {
+                @include mq(md) {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__price {
+            font-weight: 700;
+            order: 3;
+            margin-bottom: 0;
+        }
+    }
+}

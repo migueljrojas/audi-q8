@@ -1,0 +1,31 @@
+extends ../../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../../';
+
+block content
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.configuracion
+        section.configuracion__hero
+        
+        section.configuracion__content
+            .container
+                .row
+                    .col-24.col-md-16.offset-md-4
+                        h2.configuracion--paso7__title.configuracion--paso7__title--paso7 Welcome to the 8th Dimension
+                        p.configuracion--paso7__text Felicitaciones por tu configuración. Dentro de los próximos días te enviaremos un correo de confirmación y más información sobre el proceso y los siguientes pasos. Si tienes más dudas, acércate a tu concesionario Audi.
+
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados

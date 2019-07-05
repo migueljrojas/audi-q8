@@ -1,8 +1,143 @@
-extends ../_layouts/base
+extends ../../_layouts/base
 
 block config
   //- Correct base url pathing for this page
-  - var baseUrl = '../'
+  - var baseUrl = '../../';
 
 block content
-  p configuracion/paso3 page
+    header.header
+        .header__logo-q8.wow.fadeInLeft Q8
+        .header__logo-audi.wow.fadeInRight
+            img(src="/images/audi-logo.png")
+
+    main.configuracion
+        section.configuracion__hero
+        
+        section.configuracion__content
+            .container
+                .row
+                    .col-24
+                        h2.configuracion--paso3__title Selecciona tu equipamento
+                        .configuracion--paso3__content
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox1")
+                                    label.configuracion--paso3__label(for="checkbox1")
+                                    .configuracion--paso3__group
+                                        p.configuracion--paso3__description
+                                            |Premium sound system
+                                            br
+                                            |with 3D sound
+                                .configuracion--paso3__image
+                                    img(src="/images/configuracion/equip-sound.png")
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox2")
+                                    label.configuracion--paso3__label(for="checkbox2")
+                                    .configuracion--paso3__group
+                                        p.configuracion--paso3__description
+                                            |Adaptive air suspension
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox3")
+                                    label.configuracion--paso3__label(for="checkbox3")
+                                    .configuracion--paso3__group
+                                          p.configuracion--paso3__description
+                                            |Head-up display
+                                .configuracion--paso3__image
+                                    img(src="/images/configuracion/equip-headup-display.png")
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox4")
+                                    label.configuracion--paso3__label(for="checkbox4")
+                                    .configuracion--paso3__group
+                                          p.configuracion--paso3__description
+                                            |Headliner in Black fabric
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox5")
+                                    label.configuracion--paso3__label(for="checkbox5")
+                                    .configuracion--paso3__group
+                                          p.configuracion--paso3__description
+                                            |Volante deportivo de cuero
+                                            br
+                                            |multifuncional de 3 rádios con
+                                            br
+                                            |levas de cambio, calefactable
+                                .configuracion--paso3__image
+                                    img(src="/images/configuracion/equip-volante.png")
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox6")
+                                    label.configuracion--paso3__label(for="checkbox6")
+                                    .configuracion--paso3__group
+                                          p.configuracion--paso3__description
+                                            |Techo Panoramico
+                                .configuracion--paso3__image
+                                    img(src="/images/configuracion/equip-techo-pano.png")
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox7")
+                                    label.configuracion--paso3__label(for="checkbox7")
+                                    .configuracion--paso3__group
+                                          p.configuracion--paso3__description
+                                            |Audi phone box
+                                .configuracion--paso3__image
+                                    img(src="/images/configuracion/equip-phonebox.png")
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                            .configuracion--paso3__container.configuracion--paso3__container--paso3
+                                .configuracion--paso3__wrapper
+                                    input.configuracion--paso3__input(type="checkbox" id="checkbox8")
+                                    label.configuracion--paso3__label(for="checkbox8")
+                                    .configuracion--paso3__group
+                                          p.configuracion--paso3__description
+                                            |HD matrix beam LED
+                                            br
+                                            |headlight
+                                .configuracion--paso3__image
+                                    img(src="/images/configuracion/equip-lights.png")
+                                p.configuracion--paso3__price
+                                    |USD 
+                                    span 3.500
+
+                        .configuracion__buttons
+                            a.configuracion__button(href="/configuracion/paso4") Continuar
+                                span >
+
+
+    footer.footer
+        ul.footer__nav
+            li
+                a(href="#") Condiciones de Uso
+            li
+                a(href="#") Políticas de privacidad
+        
+        .footer__copy
+            p © 2019. Audi Chile. Todos los derechos reservados
